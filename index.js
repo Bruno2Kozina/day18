@@ -9,15 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (Number(counter.textContent) < Number(maximum.textContent))
     counter.textContent = Number(counter.textContent) + 1;
     knob.style.width = Number(counter.textContent * 10) + '%' ;
-
   })
-
+  
   minus.addEventListener('click', () => {
     if (Number(counter.textContent) > 0)
     counter.textContent = Number(counter.textContent) - 1;
     knob.style.width = Number(counter.textContent * 10) + '%' ;
-    
   })
-
 });
 
